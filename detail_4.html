@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载示例</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f5; padding: 40px 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: white; border-radius: 16px; padding: 30px; }
+        .back-link { color: #666; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 4px; }
+        .back-link:hover { color: #333; text-decoration: underline; }
+        h1 { color: #333; margin: 20px 0; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0; border-radius: 12px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .audio-container { background: #f8f9fa; padding: 20px; border-radius: 12px; margin: 20px 0; }
+        .audio-container audio { width: 100%; margin-top: 10px; }
+        .download-section { background: #f0f7ff; padding: 20px; border-radius: 12px; margin: 20px 0; }
+        .download-section h3 { color: #333; margin-bottom: 15px; }
+        .download-section ul { list-style: none; }
+        .download-section li { margin: 10px 0; }
+        .download-btn { display: inline-block; padding: 10px 20px; background: #3742fa; color: white; text-decoration: none; border-radius: 8px; transition: background 0.2s; }
+        .download-btn:hover { background: #5352ed; }
+        .description { color: #666; line-height: 1.8; margin-top: 20px; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回首页</a>
+        <h1>文件下载示例</h1>
+        <div class="download-section"><h3>📥 下载文件</h3><ul><li><a href="files/document.pdf" class="download-btn" download>document.pdf</a></li><li><a href="files/resource.zip" class="download-btn" download>resource.zip</a></li></ul></div><div class="description">这是一个文件下载示例。你可以分享 PDF、ZIP、图片等各种文件。
+
+点击下载按钮即可下载文件到本地。</div>
+    </div>
+</body>
+</html>
